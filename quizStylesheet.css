@@ -1,0 +1,28 @@
+:root{
+    background-color: black;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#signuptitle{
+    color: chocolate;
+}
+
+#logInTitle{
+    color: chocolate;
+}
+
+#container{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#main-title{
+    text-align: center;
+    color: chocolate;
+}
