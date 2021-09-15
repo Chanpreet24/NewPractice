@@ -57,3 +57,41 @@
 #userLevel{
     margin-left: 45px;
 }
+
+#formLogin-email{
+    margin-bottom: 10px;
+    margin-left: 45px;
+}
+
+#formLogin-password{
+    margin-bottom: 10px;
+    margin-left: 45px;
+}
+
+Button{
+    width: 200px;
+    color: chocolate;
+    background-color: chocolate(250, 215, 17);
+    position: relative;
+    margin-top: 15px;
+    margin: 5px;
+    font-weight: bold;
+}
+
+Button:hover {
+    background-color: blue;
+    cursor: pointer;
+}
+
+#signupsubmit{
+    color: chocolate;
+    font-weight: bold;
+    background-color: white;
+    margin-top: 15px;
+}
+
+#signupsubmit:hover{
+    background-color: blue;
+    cursor: pointer;
+}
+
