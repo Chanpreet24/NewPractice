@@ -35,3 +35,41 @@ function isPlayerOfAge() {
         return true;
     }
 }
+
+function progressToQuizPage() {
+    var email = checkEmail();
+    var password = isPasswordValid();
+    var player = isPlayerOfAge();
+    var validationError = document.getElementsByClassName('sign-up-form');
+ 
+     if (email == true && player == true && password == true) {
+        var doc = {
+            _id: $('#form-email').val(),
+            name: $('#form-name').val(),
+            email: $('#form-email').val(),
+            password: $('#form-password').val()
+           // userLevel: userLevel()
+        };
+
+        db2.put(doc,function(err,res){
+            if(err){
+                switch(err.message){
+                    case 'Document update conflict':
+                        alert("User already exists, please log in below");
+                        window.location.href = './index.html';
+                        break;
+                    default:
+                        window.location.href = './index.html';
+                        break;
+                }
+            }else{
+                alert(JSON.stringify(res));
+            }
+        });
+
+        window.location.href = './game.html';
+    } else
+    alert ("There is a validation error");
+    
+
+}
