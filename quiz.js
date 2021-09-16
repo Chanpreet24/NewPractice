@@ -15,3 +15,23 @@ function checkEmail() {
        alert(e.message);
     }                          
 }
+
+function isPasswordValid() {
+    var pass = $('#form-password').val();
+    if(pass.length == 0 || pass.length < 4 || pass.length > 15) {
+        alert ("Password is too short");
+        return false;
+    } else{
+        return true;
+    }
+}
+
+function isPlayerOfAge() {
+    var age = $('#ageOfPlayer').val();
+    if(age < 16) {
+        alert ("Player is not eligible to play");  
+        return false;
+    }else {
+        return true;
+    }
+}
