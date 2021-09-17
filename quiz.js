@@ -73,3 +73,7 @@ function progressToQuizPage() {
     
 
 }
+
+document.querySelector('#UserLevelButton').addEventListener('click', () => {
+    window.location.href = './UserLevel.html';
+});
